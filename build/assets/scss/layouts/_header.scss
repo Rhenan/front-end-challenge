@@ -1,0 +1,205 @@
+// Header
+.navbar-topo{
+    background: none;
+    margin: 0 0 20px;
+    border: none;
+    padding: 5px 0;
+}
+
+// Nav Menu
+.navbar{
+    min-height: 30px;
+}
+
+.navbar-nav{
+    li{
+        a{
+            @include is-opensans(600);
+            padding: 5px 10px;
+            font-size: $font-size-small;
+            color: $menu-link-color;
+            &:hover, &:focus{
+                background-color: transparent;
+                border-color: transparent;
+            }
+
+        }
+        &.open{
+            a{
+                background-color: transparent;
+                border-color: transparent;
+                &:hover, &:focus{
+                    background-color: transparent;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.navbar-collapse{
+    width: 100%;
+    //@extend .pull-left;
+}
+
+// Logo
+.logo{
+    padding: 0;
+    height: auto;
+    margin: 0;
+    a{
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 30px;
+        @include text-hide;
+    }
+    &.brand-1{
+        margin-top: -2px;
+    }
+    &.brand-2{
+        float: right;
+        a{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: right;
+        }
+    }
+}
+
+// Carros Menu List
+.dropdown.dropdown-carros{
+    .carros-menu-list{
+        padding: 15px 0;
+        max-height: 260px;
+        overflow: hidden;
+        a{
+            @include is-opensans(700);
+            padding: 10px 30px 10px 15px;
+            display: block;
+            white-space: nowrap;
+        }
+        .image-carro-menu{
+            margin-left: 30px;
+            max-height: 30px;
+        }
+
+        .mCSB_inside > .mCSB_container{
+            margin-right: 10px;
+
+        }
+        .mCSB_scrollTools_vertical{
+            margin-right: 5px;
+            .mCSB_draggerRail{
+                width: 4px;
+                background-color: rgba(#373435, 0.20);
+            }
+            .mCSB_dragger_bar{
+                background-color: #373435;
+            }
+        }
+    }
+}
+
+
+// Telefones Unidades
+.w-telefones{
+    //@extend .pull-right;
+    //position: absolute;
+    //right: 0;
+    //top: 0;
+    float: left;
+    .dropdown-menu{
+        padding: 0;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .panel-group{
+        margin: 0;
+        .panel{
+            border-color: $grey-color-d;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            .panel-heading{
+                background-color: $white-color;
+                padding: 0;
+                border-radius: 0;
+                position: relative;
+                .panel-title{
+                    //white-space: nowrap;
+                    @include is-opensans(700);
+
+                    color: $black-color-b;
+                    font-size: $font-size-base;
+                    a{
+                        min-width: 260px;
+                        padding: 15px 20px;
+                        @extend .d-block;
+                        &:hover,
+                        &:focus{
+                            text-decoration: none;
+                        }
+                    }
+
+                    i{
+                        position: absolute;
+                        right: 20px;
+                        top: 14px;
+                        font-size: $font-size-large;
+                    }
+                }
+
+
+                &.open{
+                    .panel-title{
+                        color: $red-color-a;
+                        i{
+                            //color: $red-color-a;
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                }
+            }
+
+            .panel-collapse{
+                .panel-body{
+                    background: $red-color-a;
+                    padding: 0;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            & + li{
+                                @extend .d-block;
+                                border-top: 1px solid $red-color-b;
+                            }
+                        }
+                        a{
+                            @include is-opensans();
+                            color: $white-color;
+                            @extend .d-block;
+                            padding: 13px 20px;
+                            &:hover,
+                            &:focus{
+                                text-decoration: none;
+                            }
+                        }
+                        .tel-txt{
+                            @include is-opensans(700);
+                        }
+                        .setor-txt{
+                            @include is-opensans(300);
+                        }
+                    }
+                }
+            }
+
+
+            & + .panel{
+                margin: 0;
+            }
+        }
+    }
+}

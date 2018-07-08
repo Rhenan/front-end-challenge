@@ -1,0 +1,63 @@
+// Formulario Isca
+.form-padrao{
+    color: $white-color;
+    .form-group{
+        label,
+        .label-txt{
+            @include is-opensans(600);
+            font-size: $font-size-small;
+        }
+        .radio-inline{
+            @include is-opensans(400);
+            padding-left: 0;
+            & + .radio-inline{
+                padding-left: 30px;
+            }
+            &:first-child{
+                padding-left: 0 !important;
+            }
+        }
+    }
+
+    .form-control{
+        background: none;
+        height: 30px;
+        padding: 6px 10px;
+        color: #fff;
+        font-size: $font-size-small;
+        box-shadow: none;
+        border-radius: 4px;
+        &:focus{
+            border-color: #eaeaea;
+        }
+    }
+    .checkbox{
+        label{
+            font-size: $font-size-t10;
+            padding-left: 0;
+        }
+    }
+
+
+    hr{
+        border-top: 1px solid rgba(#797979, 0.50);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.w-title-form{
+    @extend .text-center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(#797979, 0.50);
+    .t-form{
+        font-size: $font-size-large;
+        @extend .text-uppercase;
+    }
+    p{
+        @include is-opensans(300);
+        font-size: $font-size-small;
+        margin: 0;
+    }
+}

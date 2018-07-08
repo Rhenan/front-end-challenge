@@ -1,0 +1,85 @@
+// Typography
+
+
+/* Open Sans
+    light 300
+    regular 400
+    semi-bold 600
+    bold 700
+*/
+
+@mixin is-opensans($weight: 400, $style: normal) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin title($font-size) {
+    font-size: $font-size;
+}
+
+
+// Helpers
+
+.d-block{
+    display: block;
+}
+.d-inblock{
+    display: inline-block;
+}
+
+
+// Global
+//html, body {
+//    height:100%;
+//}
+body{
+    height: 100%;
+    @include is-opensans();
+}
+
+// Labels Tags
+.label-tag{
+    @include is-opensans();
+    background: $red-color-a;
+    border-radius: 25px;
+    padding: 0 15px;
+    font-size: $font-size-small;
+    line-height: 20px;
+    display: inline-block;
+}
+
+//Dropdown
+.dropdown{
+    .dropdown-toggle{
+        .seta-dropdown{
+            margin-left: 4px;
+            @extend .fa;
+            @extend .fa-angle-down;
+        }
+    }
+    .dropdown-menu{
+        border: 0;
+        border-radius: 0;
+        li{
+            a{
+                @include is-opensans(400);
+                color: $brand-primary;
+                @extend .text-uppercase;
+                padding: 6.5px 30px 6.5px 15px;
+                &:hover{
+                    color: $black-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &.open{
+        .dropdown-toggle{
+            .seta-dropdown{
+                @extend .fa-angle-up;
+            }
+        }
+    }
+}

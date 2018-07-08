@@ -1,0 +1,42 @@
+/* iCheck plugin Custom Layout
+----------------------------------- */
+.icheckbox_custom,
+.iradio_custom{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background: url('../images/icheck-radio-checkbox.png') no-repeat;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.icheckbox_custom {
+    background-position: -30px 0;
+    margin-top: -1px;
+    margin-right: 2px;
+    &.hover,
+    &.checked{
+        background-position: -45px 0;
+    }
+    &.disabled {
+        cursor: default;
+    }
+}
+.iradio_custom {
+    background-position: 0 0;
+    margin-right: 1px;
+    &.hover,
+    &.checked{
+        background-position: -15px 0;
+    }
+    &.disabled {
+        cursor: default;
+    }
+}
+

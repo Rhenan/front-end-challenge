@@ -1,0 +1,212 @@
+
+@media (max-width: $screen-xs-max) {
+
+
+    .logo.brand-2{
+        float: left;
+    }
+    .w-telefones {
+        //position: absolute;
+        //right: 15px;
+        //top: 0;
+        float: right;
+        position: initial;
+        .dropdown-menu{
+            left: 0;
+            right: 0;
+        }
+    }
+    .w-nav{
+        padding: 0;
+        margin-top: 10px;
+        .navbar-collapse{
+            background-color: $white-color;
+            position: absolute;
+            z-index: 888;
+            //padding-top: 10px;
+            //padding-bottom: 10px;
+        }
+        .navbar-nav{
+            margin: 10px 0;
+            li{
+                a{
+                    padding: 10px 0;
+                    color: $black-color;
+                    .seta-dropdown{
+                        float: right;
+                    }
+                }
+            }
+        }
+
+    }
+    .navbar-toggle{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 888;
+        padding: 0;
+        border: 0 none;
+        width: 30px;
+        height: auto;
+        margin: 0 auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        span{
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: $white-color;
+            border-radius: 4px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                top: 8px;
+            }
+            &:nth-child(4) {
+                top: 16px;
+            }
+
+
+
+        }
+        &.open{
+            span{
+                &:nth-child(1) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+                &:nth-child(2) {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+                &:nth-child(3) {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(4) {
+                    top: 18px;
+                    width: 0%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+
+    .share-txt-legal{
+        position: relative;
+        margin-top: 30px;
+    }
+    .chamada{
+        min-height: inherit;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        & + .chamada{
+            border-top: 2px solid rgba(121, 121, 121, 0.10);
+            border-left: 0 none;
+        }
+
+    }
+
+    .w-image-versao .image-versao {
+        margin-top: 60px;
+    }
+
+    .w-itens-serie{
+        .versoes-title{
+            margin-top: 20px;
+        }
+    }
+
+    .footer{
+        .logo{
+            text-align: center;
+        }
+        .w-social{
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .logo.brand-2{
+        float: left;
+        margin-top: 10px;
+    }
+    .w-telefones{
+        float: right;
+        margin-top: 10px;
+        position: initial;
+        .dropdown-menu{
+            //left: 0;
+            left: initial;
+            right: 15px;
+        }
+    }
+    .navbar-nav {
+        float: right;
+    }
+    .share-txt-legal{
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .w-image-versao .image-versao {
+        margin: 85px auto 0;
+    }
+
+    .footer{
+        .logo{
+            text-align: center;
+        }
+        .w-social{
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .w-showcase,
+    .w-chamadas{
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            &:after, &:before{
+                content: normal;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $screen-lg-min) {
+
+}

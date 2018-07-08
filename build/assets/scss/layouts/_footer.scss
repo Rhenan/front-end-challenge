@@ -1,0 +1,44 @@
+.footer{
+    background: $brand-primary;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: $grey-color-a;
+    
+
+}
+
+.links-uteis{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        a{
+            color: $grey-color-a;
+            text-decoration: underline;
+            display: inline-block;
+            padding: 0 5px 0;
+            &:hover,
+            &focus{
+                color: $white-color;
+            }
+        }
+    }
+}
+
+
+//Cosial Links
+.w-social{
+    text-align: right;
+    .btn-social{
+        & + .btn-social{
+            margin-left: 4px;
+        }
+    }
+}
+
+
+// AutoForce Logo
+.footer-autoforce{
+    padding-top: 30px;
+}

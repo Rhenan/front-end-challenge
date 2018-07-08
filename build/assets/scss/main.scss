@@ -1,0 +1,42 @@
+//
+// Variables
+// --------------------------------------------------
+@import "common/variables";
+
+// bower:scss
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//
+// Global Elements
+// --------------------------------------------------
+@import "common/global";
+
+//
+// Components
+// --------------------------------------------------
+@import "components/font-awesome";
+@import "components/mCustomScrollbar";
+@import "components/owl.carousel";
+@import "components/iCheck";
+@import "components/buttons";
+@import "components/forms";
+
+
+
+//
+// Page Structure - Header, Sidebar, Footer
+// --------------------------------------------------
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+
+//
+// Pages
+// --------------------------------------------------
+@import "layouts/pages";
+
+//
+// Media Queries
+// --------------------------------------------------
+@import "layouts/mediaqueries";
