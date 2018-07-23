@@ -17,7 +17,7 @@
             @include is-opensans(600);
             padding: 5px 10px;
             font-size: $font-size-small;
-            color: $menu-link-color;
+            color: $color-menu-link;
             &:hover, &:focus{
                 background-color: transparent;
                 border-color: transparent;

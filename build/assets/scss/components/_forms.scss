@@ -1,6 +1,6 @@
 // Formulario Isca
 .form-padrao{
-    color: $white-color;
+    color: $color-white;
     .form-group{
         label,
         .label-txt{
@@ -23,7 +23,7 @@
         background: none;
         height: 30px;
         padding: 6px 10px;
-        color: #fff;
+        color: $color-white;
         font-size: $font-size-small;
         box-shadow: none;
         border-radius: 4px;
@@ -33,14 +33,14 @@
     }
     .checkbox{
         label{
-            font-size: $font-size-t10;
+            font-size: $font-size-wee;
             padding-left: 0;
         }
     }
 
 
     hr{
-        border-top: 1px solid rgba(#797979, 0.50);
+        border-top: 1px solid rgba($color-gray-dark, 0.50);
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -50,7 +50,7 @@
     @extend .text-center;
     padding-bottom: 15px;
     margin-bottom: 15px;
-    border-bottom: 1px solid rgba(#797979, 0.50);
+    border-bottom: 1px solid rgba($color-gray-dark, 0.50);
     .t-form{
         font-size: $font-size-large;
         @extend .text-uppercase;

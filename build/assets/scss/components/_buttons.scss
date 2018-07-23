@@ -1,19 +1,19 @@
 .btn-type-a{
     background: transparent;
     @include is-opensans();
-    color: $white-color;
+    color: $color-white;
     @extend .text-uppercase;
     padding: 3px 15px;
     line-height: 20px;
     display: block;
-    border: 2px solid $white-color;
+    border: 2px solid $color-white;
     .seta-down{
         margin-left: 10px;
     }
     &:hover,
     &:focus{
-        background: $white-color;
-        color: $black-color;
+        background: $color-white;
+        color: $color-black;
         text-decoration: none;
     }
 
@@ -21,67 +21,67 @@
 
 // Botao Simulacao
 .btn-simulacao{
-    background-color: rgba(#b71d3e, 1);
+    background-color: rgba($color-red-a, 1);
     border-top: 2px solid #d32e51;
     border-bottom: 2px solid #ab2e43;
     border-radius: 4px;
     width: 100%;
     @extend .d-block;
     @include is-opensans(700);
-    color: $white-color;
+    color: $color-white;
     @extend .text-uppercase;
     -webkit-box-shadow: 0 4px 5px 0 rgba(#db5168, 0.5);
     box-shadow: 0 4px 5px 0 rgba(#db5168, 0.5);
     &:hover,
     &:focus{
         background-color: rgba(#b71d3e, 0.9);
-        color: $white-color;
+        color: $color-white;
     }
 }
 
 // Botoes Redes Sociais
 .btn-social{
-    background: rgba(#eaeaea, 0.25);
+    background: rgba($color-gray-light, 0.25);
     color: $brand-primary;
     width: 35px;
     padding: 9px 5px;
     border: 0;
     border-radius: 0;
-    font-size: $font-size-t16;
+    font-size: $font-size-h5;
     display: inline-block;
     &:hover,
     &:focus{
-        color: $white-color;
+        color: $color-white;
     }
 }
 
 .btn-facebook{
     @extend .fa;
     @extend .fa-facebook;
-    &:hover,
-    &:focus{
-        background: $facebook-color;
-        color: $white-color;
-    }
+    //&:hover,
+    //&:focus{
+    //    background: $facebook-color;
+    //    color: $white-color;
+    //}
 }
 
 .btn-twitter{
     @extend .fa;
     @extend .fa-twitter;
     &:hover,
-    &:focus{
-        background: $twitter-color;
-        color: $white-color;
-    }
+    //&:focus{
+    //    background: $twitter-color;
+    //    color: $white-color;
+    //}
 }
 
 .btn-google{
     @extend .fa;
     @extend .fa-google-plus;
-    &:hover,
-    &:focus{
-        background: $google-color;
-        color: $white-color;
-    }
+    //&:hover,
+    //&:focus{
+    //    background: $google-color;
+    //    color: $white-color;
+    //}
 }
 

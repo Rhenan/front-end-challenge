@@ -8,8 +8,8 @@
     bold 700
 */
 
-@mixin is-opensans($weight: 400, $style: normal) {
-    font-family: 'Open Sans', sans-serif;
+@mixin is-opensans($weight: $font-weight-normal, $style: normal) {
+    font-family: $font-family-base;
     font-weight: $weight;
     font-style: $style;
 }
@@ -41,7 +41,7 @@ body{
 // Labels Tags
 .label-tag{
     @include is-opensans();
-    background: $red-color-a;
+    background: $color-red-a;
     border-radius: 25px;
     padding: 0 15px;
     font-size: $font-size-small;
@@ -68,7 +68,7 @@ body{
                 @extend .text-uppercase;
                 padding: 6.5px 30px 6.5px 15px;
                 &:hover{
-                    color: $black-color;
+                    color: $color-black;
                     text-decoration: underline;
                 }
             }
