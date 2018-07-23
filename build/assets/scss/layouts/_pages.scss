@@ -26,6 +26,9 @@
         //    content: normal;
         //}
     }
+    p{
+        color: $color-white;
+    }
 }
 
 // Background Video
@@ -52,16 +55,30 @@
 .w-isca{
     //height: 570px;
     padding: 25px 15px;
-    background:  rgba($black-color, 0.60);
+    background:  rgba($color-black, 0.60);
+}
+
+.link-pol{
+    color: $color-white;
+    text-decoration: underline;
+    @include title($font-size-small);
+    margin-top: 25px;
+    &:hover{
+        color: $color-white;
+    }
 }
 
 // Informações Veículos
 .w-infos{
-    color: $white-color;
+    color: $color-white;
+
+    p{
+        color: $color-white;
+    }
 }
 
 .w-infos__info-version{
-    @include is-opensans(700);
+    @include is-opensans($font-weight-bold);
     font-size: $font-size-t34;
     @extend .text-uppercase;
     letter-spacing: 2px;
@@ -72,12 +89,13 @@
     margin-top: 0;
 }
 .w-infos__info-chamada{
-    @include is-opensans(600);
+    @include is-opensans($font-weight-semi-bold);
     font-size: $font-size-large;
     margin-top: 10px;
 }
-.w-infos__info-valores{
 
+.w-infos__info-valores{
+    margin-top: 50px;
     .preco-antigo{
         @extend .d-block;
         font-size: $font-size-large;
@@ -89,24 +107,24 @@
         margin-bottom: 10px;
         .valor{
             font-size: $font-size-t32;
-            @include is-opensans(600);
+            @include is-opensans($font-weight-semi-bold);
         }
     }
     p{
-        font-size: $font-size-t10;
+        font-size: $font-size-wee;
     }
 }
 
 .share-txt-legal{
     position: absolute;
     bottom: 0;
-    color: $white-color;
+    color: $color-white;
     font-size: $font-size-small;
     .btn-shares{
         margin-bottom: 15px;
     }
     .txt-legal{
-        font-size: $font-size-t10;
+        font-size: $font-size-wee;
         text-align: justify;
     }
 }
@@ -137,15 +155,15 @@
 .chamada-title{
     @include is-opensans();
     font-size: $font-size-t38;
-    color: $red-color;
+    color: $color-red;
     margin-top: 10px;
 }
 .chamada-subtitle{
-    @include is-opensans(300);
-    color: $white-color;
+    @include is-opensans($font-weight-light);
+    color: $color-white;
 }
 .chamada-desc{
-    color: $grey-color;
+    color: $color-gray;
 }
 
 // Versões
@@ -157,9 +175,9 @@
 }
 
 .versoes-title{
-    @include is-opensans(300);
+    @include is-opensans($font-weight-light);
     font-size: $font-size-t22;
-    color: $white-color;
+    color: $color-white;
 }
 
 .w-list-versoes{
@@ -171,16 +189,16 @@
     padding: 0;
     .versao-item{
         padding: 8.5px 0;
-        border-bottom: 1px solid rgba($white-color, 0.20);
+        border-bottom: 1px solid rgba($color-white, 0.20);
         .versao-txt{
             text-decoration: none;
-            font-size: $font-size-t16;
-            color: rgba($white-color, 0.20);
+            font-size: $font-size-h5;
+            color: rgba($color-white, 0.20);
             @extend .text-uppercase;
 
             &:hover,
             &.active{
-                color: rgba($white-color, 1);
+                color: rgba($color-white, 1);
             }
         }
 
@@ -195,7 +213,7 @@
 }
 
 .w-info-versao{
-    background:  rgba($black-color, 0.75);
+    background:  rgba($color-black, 0.75);
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -208,11 +226,11 @@
     //mScroll Bar Padrao
 
     .mCSB_scrollTools .mCSB_draggerRail{
-        background-color: $black-color-a;
+        background-color: $color-darkness;
         width: 3px;
     }
     .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-        background-color: $red-color;
+        background-color: $color-red;
         width: 3px;
     }
     .mCSB_inside > .mCSB_container {
@@ -249,11 +267,11 @@
         tr{
             td{
                 padding: 5px 10px;
-                color: $grey-color-a;
+                color: $color-gray-dark;
                 width: 50%;
                 font-size: $font-size-small;
                 &.txt-red{
-                    color: $red-color;
+                    color: $color-red;
                 }
 
             }
@@ -285,7 +303,7 @@
     padding-top: 45px;
     padding-bottom: 45px;
     .title-bloco{
-        @include is-opensans(300);
+        @include is-opensans($font-weight-light);
         font-size: $font-size-t32;
         @extend .d-block;
         margin-top: 10px;
@@ -301,23 +319,31 @@
 }
 
 .w-slide-carros{
+
+    .slide-item{
+        .txt{
+            color: $color-gray-darker;
+            @include title($font-size-h5);
+        }
+    }
+
     .owl-nav{
         .owl-prev,
         .owl-next{
             @extend .text-hide;
-            background-color: $grey-color-b;
+            background-color: $color-gray;
             width: 30px;
             height: 30px;
             position: absolute;
             top: 50%;
             margin-top: -15px;
-            color: $white-color;
-            font-size: $font-size-t16;
+            color: $color-white;
+            font-size: $font-size-h5;
             padding: 6px 13px;
             text-align: center;
             &:hover,
             &:focus{
-                background-color: $grey-color-c;
+                background-color: $color-gray-darker;
             }
         }
         .owl-prev{
@@ -340,16 +366,23 @@
     .owl-dots {
         margin-top: 20px;
         text-align: center;
+
         .owl-dot {
             display: inline-block;
             zoom: 1;
-            *display: inline;
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
 
             span {
                 width: 10px;
                 height: 10px;
                 margin: 5px;
-                background: $grey-color;
+                background: $color-gray;
                 display: block;
                 -webkit-backface-visibility: visible;
                 transition: opacity 200ms ease;
@@ -359,7 +392,7 @@
             &.active,
             &:hover {
                 span {
-                    background: $red-color-a;
+                    background: $color-red-a;
                 }
             }
         }

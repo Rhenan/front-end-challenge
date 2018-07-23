@@ -86,6 +86,10 @@ $font-size-h4:            	            ceil($font-size-base * 1.25);		// 18px
 $font-size-h5:            	            ceil($font-size-base * 1.125);	    // 16px
 $font-size-h6:            	            ceil($font-size-base * 0.85);		// 12px
 
+$font-size-t22:                         ceil(($font-size-base * 1.55));     // ~22px
+$font-size-t32:                         ceil(($font-size-base * 2.28));     // ~32px
+$font-size-t34:                         ceil(($font-size-base * 2.42));     // ~34px
+$font-size-t38:                         ceil(($font-size-base * 2.71));     // ~38px
 
 //
 //$font-size-base:          14px !default;
@@ -179,7 +183,7 @@ $time-duration: 						0.25s;
 .fa-twitter,
 .fa-whatsapp,
 .fa-youtube-play {
-    @include transition-simple;
+    //@include transition-simple;
     &:hover {color: $color-white;}
 }
 

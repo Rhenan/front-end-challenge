@@ -14,7 +14,7 @@
 .navbar-nav{
     li{
         a{
-            @include is-opensans(600);
+            @include is-opensans($font-weight-semi-bold);
             padding: 5px 10px;
             font-size: $font-size-small;
             color: $color-menu-link;
@@ -73,7 +73,7 @@
         max-height: 260px;
         overflow: hidden;
         a{
-            @include is-opensans(700);
+            @include is-opensans($font-weight-bold);
             padding: 10px 30px 10px 15px;
             display: block;
             white-space: nowrap;
@@ -116,20 +116,20 @@
     .panel-group{
         margin: 0;
         .panel{
-            border-color: $grey-color-d;
+            border-color: $color-gray-dark;
             border-left: 0;
             border-right: 0;
             border-bottom: 0;
             .panel-heading{
-                background-color: $white-color;
+                background-color: $color-white;
                 padding: 0;
                 border-radius: 0;
                 position: relative;
                 .panel-title{
                     //white-space: nowrap;
-                    @include is-opensans(700);
+                    @include is-opensans($font-weight-bold);
 
-                    color: $black-color-b;
+                    color: $color-gray-darker;
                     font-size: $font-size-base;
                     a{
                         min-width: 260px;
@@ -152,9 +152,8 @@
 
                 &.open{
                     .panel-title{
-                        color: $red-color-a;
+                        color: $color-red-a;
                         i{
-                            //color: $red-color-a;
                             transform: rotate(180deg);
                         }
                     }
@@ -164,7 +163,7 @@
 
             .panel-collapse{
                 .panel-body{
-                    background: $red-color-a;
+                    background: $color-red-a;
                     padding: 0;
                     ul{
                         margin: 0;
@@ -173,12 +172,12 @@
                         li{
                             & + li{
                                 @extend .d-block;
-                                border-top: 1px solid $red-color-b;
+                                border-top: 1px solid $color-red-a;
                             }
                         }
                         a{
                             @include is-opensans();
-                            color: $white-color;
+                            color: $color-white;
                             @extend .d-block;
                             padding: 13px 20px;
                             &:hover,
@@ -187,10 +186,10 @@
                             }
                         }
                         .tel-txt{
-                            @include is-opensans(700);
+                            @include is-opensans($font-weight-bold);
                         }
                         .setor-txt{
-                            @include is-opensans(300);
+                            @include is-opensans($font-weight-light);
                         }
                     }
                 }

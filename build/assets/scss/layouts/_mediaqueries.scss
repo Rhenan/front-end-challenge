@@ -1,7 +1,5 @@
 
 @media (max-width: $screen-xs-max) {
-
-
     .logo.brand-2{
         float: left;
     }
@@ -20,7 +18,7 @@
         padding: 0;
         margin-top: 10px;
         .navbar-collapse{
-            background-color: $white-color;
+            background-color: $color-white;
             position: absolute;
             z-index: 888;
             //padding-top: 10px;
@@ -31,7 +29,7 @@
             li{
                 a{
                     padding: 10px 0;
-                    color: $black-color;
+                    color: $color-black;
                     .seta-dropdown{
                         float: right;
                     }
@@ -64,7 +62,7 @@
             position: absolute;
             height: 4px;
             width: 100%;
-            background: $white-color;
+            background: $color-white;
             border-radius: 4px;
             opacity: 1;
             left: 0;

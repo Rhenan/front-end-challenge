@@ -1,5 +1,7 @@
-// Typography
 
+/*------------------------------------
+  Typography
+------------------------------------*/
 
 /* Open Sans
     light 300
@@ -18,8 +20,67 @@
     font-size: $font-size;
 }
 
+/*------------------------------------
+  Default Styles
+------------------------------------*/
 
-// Helpers
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    font-family: $font-family-base;
+    color: $color-darkness;
+    height: 100%;
+    @include is-opensans();
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga", "kern";
+    text-rendering: optimizelegibility;
+}
+
+p {
+    color: $text-color;
+}
+
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+
+/*------------------------------------
+  Highlight Color
+------------------------------------*/
+
+::-moz-selection {
+    color: $color-white;
+    background-color: $brand-primary;
+}
+
+::selection {
+    color: $color-white;
+    background-color: $brand-primary;
+}
+
+.bg-primary ::-moz-selection {
+    color: $color-white;
+    background-color: $brand-primary;
+}
+
+.bg-primary ::selection {
+    color: $color-white;
+    background-color: $brand-primary;
+}
+
+
+/*------------------------------------
+  Helpers
+------------------------------------*/
 
 .d-block{
     display: block;
@@ -28,15 +89,6 @@
     display: inline-block;
 }
 
-
-// Global
-//html, body {
-//    height:100%;
-//}
-body{
-    height: 100%;
-    @include is-opensans();
-}
 
 // Labels Tags
 .label-tag{
