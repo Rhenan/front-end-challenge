@@ -1,3 +1,26 @@
+### Instalação
+To use this template, your computer needs:
+
+NodeJS (0.12 or greater)
+Git
+This template can be installed with the Bootstrap CLI, or downloaded and set up manually.
+
+Using the CLI
+Install the Bootstrap CLI with this command:
+
+[sudo] npm install -g gulp bower
+npm install bootstrap-cli --global
+The CLI will prompt you to give your project a name. The code will be downloaded into a folder with this name.
+
+Manual Setup
+Open the folder in your command line, and install the needed dependencies:
+
+cd projectname
+npm install
+bower install
+
+Finally, run npm start to run the Sass and HTML template compiler. They will re-run every time you save a Sass or HTML temaplate file.
+
 # Front-end Challenge
 
 Esta é a **segunda fase** do processo seletivo para vaga de desenvolvedor front-end da AutoForce.
